@@ -5,6 +5,7 @@ new Vue({
             info: null,
             loading: true,
             errored: false,
+            selected: ' ',
         };
     },
     mounted() {
