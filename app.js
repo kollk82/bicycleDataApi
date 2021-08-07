@@ -12,7 +12,7 @@ new Vue({
         async fetchApi() {
             await axios
                 .get(
-                    'https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=36d9b02b3c2716866d6fa0e801dd15d9b837938f'
+                    'https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=?'
                 )
                 .then(response => {
                     this.info = response.data;

@@ -29,8 +29,8 @@
                 class="
                     block
                     absolute
-                    top-0     
-                    p-6               
+                    top-0
+                    p-6
                     mt-8
                     mx-6
                     sm:p-6
@@ -87,6 +87,7 @@
                     </div>
                     <div v-else>
                         <select
+                            type="text"
                             v-model="selected"
                             class="
                                 w-full
@@ -107,8 +108,9 @@
                         >
                             <option disabled value="">Please select one</option>
                             <option
+                                type="text"
                                 v-for="i in info"
-                                v-bind:value="[i.bike_stands, i.available_bike_stands, i.available_bikes]"
+                                v-bind:value="[i.bike_stands, i.available_bike_stands]"
                             >
                                 {{ i.name }}
                             </option>
@@ -123,7 +125,7 @@
                                 font-bold
                                 text-gray-700
                             "
-                            >{{ selected }}</span
+                            >Total Bike Stands {{ selected }}</span
                         >
                     </div>
                 </section>
