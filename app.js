@@ -2,7 +2,7 @@ new Vue({
     el: '#app',
     data() {
         return {
-            info: {},
+            info: '',
             loading: true,
             errored: false,
             selected: '',
